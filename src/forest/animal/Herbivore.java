@@ -28,7 +28,7 @@ public class Herbivore extends Animal implements Food{
         var portion = Math.random() * grassToEat.getMass();
         setMass(mass + portion);
 
-        System.out.println(name + " сьел: " + portion + " " + grassToEat.getName());
+        System.out.println(name + " сьел: " + portion + " грамма " + grassToEat.getName());
 
         var newGrassMass = grassToEat.getMass() - portion;
         grassToEat.setMass(newGrassMass);

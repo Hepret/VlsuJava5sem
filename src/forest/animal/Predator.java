@@ -37,7 +37,7 @@ public class Predator extends Animal {
 
         herbivore.die();
 
-        System.out.println(name + " сьел: " + portion + " " + herbivore.getName());
+        System.out.println(name + " сьел: " + portion + " грамма " + herbivore.getName());
     }
 
     private boolean hunting(Herbivore herbivore)
