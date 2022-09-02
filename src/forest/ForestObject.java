@@ -1,6 +1,6 @@
 package forest;
 
-public class ForestObject {
+public abstract class ForestObject {
 
     private static int total_ids = 1;
 
