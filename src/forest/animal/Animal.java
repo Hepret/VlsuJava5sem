@@ -7,7 +7,7 @@ public abstract class Animal extends ForestObject {
 
     protected boolean isAlive;
 
-    public Animal(String name, float mass) {
+    public Animal(String name, double mass) {
         super(name, mass);
         isAlive = true;
     }
@@ -16,7 +16,7 @@ public abstract class Animal extends ForestObject {
         System.out.println("Животное: " + name + " - МЕРТВО");
         isAlive = false;
     }
-    public abstract void Eat(Food food);
+    public abstract void Eat(Food food) throws Exception;
 
 
 
