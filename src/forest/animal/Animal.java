@@ -1,5 +1,6 @@
 package forest.animal;
 
+import forest.Food;
 import forest.ForestObject;
 
 public abstract class Animal extends ForestObject {
@@ -14,7 +15,7 @@ public abstract class Animal extends ForestObject {
     public void Die() {
         System.out.println("Животное: " + name + " - МЕРТВО");
     }
-    public abstract void Eat();
+    public abstract void Eat(Food food);
 
 
 
