@@ -14,6 +14,7 @@ public abstract class Animal extends ForestObject {
 
     public void Die() {
         System.out.println("Животное: " + name + " - МЕРТВО");
+        isAlive = false;
     }
     public abstract void Eat(Food food);
 
