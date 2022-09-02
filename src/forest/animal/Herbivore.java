@@ -9,18 +9,16 @@ public class Herbivore extends Animal implements Food{
     }
 
     @Override
-    public void Eat(Food food) throws Exception {
+    public void eat(Food food) throws Exception {
         if (!isAlive) throw new Exception("Невозможно: " + name + " - МЕРТВО");
-        if (!(food instanceof Grass)) throw new Exception(name + " - травоядный");
-
-        var grassToEat = (Grass) food;
+        if (!(food instanceof Grass grassToEat)) throw new Exception(name + " - травоядный");
 
 
-        Eating(grassToEat);
+        eating(grassToEat);
 
     }
 
-    private void Eating(Grass grassToEat) {
+    private void eating(Grass grassToEat) {
         if (grassToEat.getMass() == 0) {
             System.out.println("Нечего есть");
             return;

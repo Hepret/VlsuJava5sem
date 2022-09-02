@@ -12,11 +12,11 @@ public abstract class Animal extends ForestObject {
         isAlive = true;
     }
 
-    public void Die() {
+    public void die() {
         System.out.println("Животное: " + name + " - МЕРТВО");
         isAlive = false;
     }
-    public abstract void Eat(Food food) throws Exception;
+    public abstract void eat(Food food) throws Exception;
 
 
 
